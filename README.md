@@ -1,0 +1,1 @@
+# maconomy-web-extension
