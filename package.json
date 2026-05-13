@@ -1,0 +1,15 @@
+{
+  "name": "maconomy-holiday-guard",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/content/index.ts",
+    "build": "bun build src/content/index.ts --outdir dist/content --target browser && bun build src/popup/popup.ts --outdir dist/popup --target browser",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12"
+  }
+}
