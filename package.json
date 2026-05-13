@@ -4,12 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "bun run --watch src/content/index.ts",
-    "build": "bun build src/content/index.ts --outdir dist/content --target browser && bun build src/popup/popup.ts --outdir dist/popup --target browser",
+    "dev": "vite build --watch",
+    "build": "bun run scripts/build.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "typescript": "~6.0.2",
     "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "temporal-polyfill": "^0.3.2"
   }
 }
